@@ -19,6 +19,8 @@ namespace ExampleDotNet461RestApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.Add(new BrowserJsonFormatter());
         }
     }
 }
